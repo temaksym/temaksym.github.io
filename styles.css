@@ -46,7 +46,7 @@ body{
 
 .menu-item p{
 	margin: 10px;
-
+	text-decoration: none;
 }
 
 .img-div{
