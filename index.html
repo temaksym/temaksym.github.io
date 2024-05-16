@@ -1,754 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maksym Teutuliak Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Max`s Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/avatar-1.jpg" alt="Maksym Teutuliak">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Maksym Teutuliak</h1>
-
-          <p class="title">Data Scientist</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:max.teutuliak@gmail.com" class="contact-link">max.teutuliak@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+380684390082</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">April 25, 2005</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Lviv, Ukraine</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.facebook.com/profile.php?id=100079276938150" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://twitter.com/temaksym" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/temaksym/" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/temaksym/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm a passionate learner in the Data Science field, always on the lookout for chances to grow and gain hands-on experience. I'm open to part-time work or temporary contracts, eager to contribute my skills wherever needed.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-vis.png" alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Visualization</h4>
-
-                <p class="service-item-text">
-                  I create compelling data visualizations that transform complex information into insightful graphics, helping you make informed decisions.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Machine Learning</h4>
-
-                <p class="service-item-text">
-                  I leverage machine learning algorithms to develop predictive models and intelligent systems that extract valuable insights.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-scrape.png" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Scraping</h4>
-
-                <p class="service-item-text">
-                  I specialize in extracting and curating data from various online sources through advanced scraping techniques.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-cleaning.png" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Cleaning</h4>
-
-                <p class="service-item-text">
-                  I excel in refining and enhancing raw datasets through data cleaning processes, ensuring accuracy and reliability for meaningful analysis and strategic decision-making by clients.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <!-- <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-         -->
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-        
-
-        <!--
-          - clients
-        -->
-
-        <!-- <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section> -->
-
-      </article>
-
-    
-
-
-
-      <!--
-        - #RESUME
-      -->
-      
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience:</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <p class="timeline-text">
-                Flat rent prices prediction machine learning model along with data collection (in that case – web scraping)
-              </p>
-            </li>
-            <li class="timeline-item">
-              <p class="timeline-text">
-                Development of an algorithm for detecting similar topic for a news website.
-              </p>
-            </li>
-            <li class="timeline-item">
-              <p class="timeline-text">
-                Informational dashboard describing market share of top 1000 Forbes companies.
-              </p>
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Skills:</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <p class="timeline-text">
-                Python: Jupyter Notebook, Google Collab, Data Processing, Pandas, Matplotlib,  APIs connections
-              </p>
-            </li>
-            <li class="timeline-item">
-              <p class="timeline-text">
-                Data Visualization: Power BI, Tableau
-              </p>
-            </li>
-            <li class="timeline-item">
-              <p class="timeline-text">
-                Machine Learning (scikit-learn, tensorflow)
-              </p>
-            </li>
-            <li class="timeline-item">
-              <p class="timeline-text">
-                Web Scraping
-              </p>
-            </li>
-            <li class="timeline-item">
-              <p class="timeline-text">
-                Excel (Data Processing and Visualization)
-              </p>
-            </li>
-            <li class="timeline-item">
-              <p class="timeline-text">
-                SQL
-              </p>
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Currently a student at Lviv Polytechnic National University</h4>
-
-              <span>2022 - 2023</span>
-
-              <p class="timeline-text">
-                <b>Relevant courses:</b>  Statistics, Programming, Linear Algebra, Math Analysistias
-                exceptur.
-              </p>
-
-            </li>
-
-            
-
-          </ol>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select >
-
-              
-
-            </button>
-
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active">
-              <a href="./assets/images/MyFantasy Dashboard.png">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/MyFantasy Dashboard.png" alt="Data Visualization" loading="lazy">
-                </figure>
-                <h3 class="project-title">Revenue from mobile game Dashboard</h3>
-                <p class="project-category">Data Visualization</p>
-              </a>
-            </li>
-
-            <li class="project-item  active">
-              <a href="./assets/images/ROAS Dashboard.png">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/ROAS Dashboard.png" alt="Data Visualization" loading="lazy">
-                </figure>
-                <h3 class="project-title">ROAS rate Dashboard</h3>
-                <p class="project-category">Data Visualization</p>
-              </a>
-            </li>
-
-            <li class="project-item  active">
-              <a href="./assets/images/scrape1.png">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/scrape1.png" alt="Data Visualization" loading="lazy">
-                </figure>
-                <h3 class="project-title">DOM.Ria website scrape with python</h3>
-                <p class="project-category">Data Scraping</p>
-              </a>
-            </li>
-
-            <li class="project-item  active">
-              <a href="./assets/images/Forbes visual.png">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/Forbes visual.png" alt="Data Visualization" loading="lazy">
-                </figure>
-                <h3 class="project-title">Forbes Visualization</h3>
-                <p class="project-category">Data Visualization</p>
-              </a>
-            </li>
-
-            <li class="project-item  active">
-              <a href="./assets/images/PDF scrape.png">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/PDF scrape.png" alt="Data Visualization" loading="lazy">
-                </figure>
-                <h3 class="project-title">PDF Invoices scraping project</h3>
-                <p class="project-category">Data Scraping</p>
-              </a>
-            </li>
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-    
-
-      <!--
+	<img src="assets/Group.svg" class="floating-img" alt="">
+	<header id="header">
+		<div class="menu">
+			<div class="menu-item">
+				<div class="img-div">
+					<img src="assets/phone.png" alt="">
+				</div>
+				<p>+380684390082</p>
+			</div>
+
+			<div class="menu-item">
+				<div class="img-div">
+					<img src="assets/loca.png" alt="">
+				</div>
+				<p>Lviv, Ukraine</p>
+			</div>
+
+			<div class="menu-item">
+				<div class="img-div">
+					<img src="assets/post.png" alt="">
+				</div>
+				<p>max.teutuliak@gmail.com</p>
+			</div>
+		</div>
+	</header>
+	<div class="main">
+		<div class="left-main">
+			<h1>Maksym Teutuliak</h1>
+			<h2>DATA SCIENTIST</h2>
+			<div class="butt-div">
+				<button class="button1">View Portfoilio <img src="assets/arrow.png" alt=""></button>
+				<a href="assets/Maksym Teutuliak.docx" download="Resume" class="down-res"><button class="button2">Download Resume<img src="assets/downloads.png" alt=""></button></a>
+			</div>
+		</div>
+		<div class="right-main">
+			<div class="exp-container"></div>
+				<div class="exp-block">
+					<h1>Data Visualization</h1>
+					<div class="exp-row">
+						<div class="exp-img"><img src="assets/visuals.png" alt=""></div>
+						<p>I create compelling data visualizations that transform  complex information into insightful graphics, helping you make informed  decisions.</p>
+					</div>
+				</div>
+				<div class="exp-block">
+					<h1>Machine Learning</h1>
+					<div class="exp-row">
+						<div class="exp-img"><img src="assets/machine.png" alt=""></div>
+						<p>I leverage machine learning algorithms to develop  predictive models and intelligent systems that extract valuable  insights.</p>
+					</div>
+				</div>
+				<div class="exp-block">
+					<h1>Data Scraping</h1>
+					<div class="exp-row">
+						<div class="exp-img"><img src="assets/web-scrape.png" alt=""></div>
+						<p>I specialize in extracting and curating data from various online sources through advanced scraping techniques.</p>
+					</div>
+				</div>
+				<div class="exp-block">
+					<h1>Data Cleaning</h1>
+					<div class="exp-row">
+						<div class="exp-img"><img src="assets/cleaning.png" alt=""></div>
+						<p>I excel in refining raw datasets through  data cleaning processes, ensuring accuracy for  meaningful analysis and strategic decision-making.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--
         - #CONTACT
       -->
 
       <article class="contact" data-page="contact">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title">Contact me!</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed/v1/place?q=Lviv&key=AIzaSyCORX_LBquNDW1K0KSZoIOHTv2kJeef070"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
         <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
 
           <form action="https://formsubmit.co/max.teutuliak@gmail.com" method="POST" class="form" data-form>
 
@@ -761,7 +98,6 @@
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
 
@@ -771,26 +107,5 @@
 
       </article>
 
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
-
 </html>
